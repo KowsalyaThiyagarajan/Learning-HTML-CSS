@@ -1,0 +1,74 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: lavenderblush;
+	height: 100vh;
+	display: flex;
+	}
+.slideshow
+{
+width: 720px;
+height: 400px;
+overflow: hidden;
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.navigation{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+.Banner{
+	width: 50px;
+	height: 10px;
+	border: 2px solid white;
+	margin: 6px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.Banner:hover{
+	background: white;
+}
+input[name="slide"]{
+	position: absolute;
+	visibility: hidden;
+	
+}
+.Slides{
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+.Slider{
+	height: 600px;
+	transition: 0.6s;
+}
+.Slider img{
+	height: 100%;
+	transition: all 0.15s ease;
+
+}
+#img1:checked ~ .s1{
+	margin-left: 0;
+
+}
+#img2:checked ~ .s1{
+	margin-left: -20%;
+
+	
+}
+#img3:checked ~ .s1{
+	margin-left: -40%;
+	
+}
+#img4:checked ~ .s1{
+	margin-left: -60%;
+	
+}
+
+
+
